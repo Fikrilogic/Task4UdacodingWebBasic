@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.6em;
+    font-family: 'Teko', sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    height: 700px;
+    border-bottom: 1px solid rgba(0,0,0,0,0.2);
+    background-image: url(/res/Slider.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.nav-logo{
+    float: left;
+    width: 30%;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 35px;
+    margin-top: 400px;
+}
+.nav-logo img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.nav-list{
+    float: right;
+    width: 50%;
+    font-size: 25px;    
+}
+
+.nav-list ul{
+    list-style: none;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.nav-list ul li{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.nav-list ul li a{
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+#btn-login{
+    margin-left: 50px;
+    background-color: #baff42;
+    box-shadow: 3px 3px 2px rgba(160,232,102,0.5);
+    padding: 2px 30px;
+    border-radius: 11px;
+}

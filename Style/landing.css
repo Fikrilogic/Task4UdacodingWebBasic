@@ -84,21 +84,79 @@ section{
 }
 
 .content-section{
-    width: 900px;
+    width: 80%;
     height: 300px;
-    display: flex;
-    position: absolute;
     text-align: center;
-    left: 20%;
+    position: absolute;
+    left: 10%;
     background: #Fff;
-    top: -20%;
-    justify-content: space-evenly;
-    align-items: center;
+    top: -10%;
     border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
 }
 .container-content{
-    flex: 1;
-    margin-top: 20px;
+    display: inline-block;
+    width: 25%;
+    height: 250px;
+    margin: 20px 30px;
     padding: 40px 0px;
-    border: 1px solid rgba(0, 0, 0, 0.2);;
+    border: none;
+    background-color: rgba(160,232,102, 0.5);
+    border-radius: 5px;
+}
+
+.container-content:hover{
+    cursor: pointer;
+    background-color: rgba(160,232,102);
+}
+
+.content .title-content{
+    font-size: 25px;
+    margin-bottom: 30px;
+    font-weight: bolder;
+}
+
+#line{
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    background-color: rgba(160,232,102);
+    top: 350px;
+    left: 100px;
+}
+#about-us{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 55%;
+    left: 7%;
+}
+.container{
+    width: 100%;
+    padding: 0 auto;
+}
+
+#about-us .container h1{
+    font-size: 50px;
+    letter-spacing: 0.2em;
+    margin-bottom: 40px;
+}
+
+.about-description{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.about-description h3{
+    flex: 1;
+    width: 40%;
+    font-size: 30px;
+    margin-right: 50px;
+}
+
+.about-description p{
+    flex: 1;
+    width: 50%;
+    font-size: 25px;
 }

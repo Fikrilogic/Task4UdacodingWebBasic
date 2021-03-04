@@ -228,6 +228,7 @@ section{
     left: 100px;
     padding: 20px 30px;
     text-align: center;
+    border-bottom:1px solid rgba(0, 0, 0, 0.2)
 }
 
 .event h2{
@@ -284,8 +285,143 @@ section{
     height: 200px;
 }
 
+.service-section{
+    width: 100%;
+    height: auto;
+    position:absolute;
+    top: 2550px;
+    left: 20px;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#service-title{
+    width: 350px;
+    font-size: 50px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.line{
+    width: 50%;
+    height: 5px;
+    background-color: #a0e866;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.container-service{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.list-service{
+    height: 250px;
+    padding: 15px 30px;
+    background-color: rgba(160,232,102, 0.4);
+    flex: 1 35%;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+.list-service h3{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.list-service p{
+    font-size: 17px;
+    text-align: justify;
+}
+
+.list-service:hover{
+    cursor: pointer;
+    background-color: rgba(160,232,102);
+}
+
+.feedback-section{
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    top: 3400px;
+    text-align: center;
+    background-color: #a0e866;
+}
+
+#feedback-title{   
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-transform: inherit;
+    letter-spacing: 5px;
+    padding: 20px 0px;
+    border-bottom: 1px solid rgba(160,232,102, 0.5);
+}
+
+#feedback-desc{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.content-feedback{
+    width: 80%;
+    padding: 20px 30px;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+}
+.feedback{
+    flex: 1 35%;
+    height: auto;
+    margin-left: 40px;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 15px 30px;
+}
+
+.feedback h4{
+    font-size: 25px;
+    font-weight: 700;
+}
+.feedback .role{
+    font-size: 20px;
+    border-bottom: 3px solid #a0e866;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.feedback p{
+    font-size: 15px;
+    text-align: justify;
+}
 
 /*media query*/
+
+@media only screen and (max-width: 1100px){
+
+    .event{
+        top: 200%;
+    }
+    .service-section{
+        top: 300%;
+    }
+
+    .feedback-section{
+        top: 390%;
+    }
+
+    .founder-name h3{
+        letter-spacing: 0px;
+    }
+}
 @media only screen and (max-width: 600px){
     .content-section{
         width: 80%;
@@ -356,5 +492,36 @@ section{
     .event h2{
         width: 80%;
         margin-left: 40px;
+    }
+
+    .service-section{
+        top: 440%;
+    }
+
+    #service-title{
+        width: 100%;
+    }
+
+    .list-service{
+        flex: 1 100%;
+    }
+
+    .feedback-section{
+        top: 590%;
+    }
+    #feedback-title{
+        letter-spacing: 0px;
+    }
+    .feedback-section .content-feedback{
+        width: 100%;
+        margin-left: 0px;
+        display: block;
+        height: auto;
+    }
+
+    .content-feedback .feedback{
+        width: 100%;
+        text-align: center;
+        margin-left: 0px;
     }
 }

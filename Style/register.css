@@ -80,3 +80,109 @@
   text-align: justify;
   font-size: 20px;
 }
+
+.register-form {
+  width: 50%;
+  height: auto;
+  flex: 1;
+  margin-right: 50px;
+  background-color: #a0e866;
+  padding: 20px 15px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+form {
+  width: 100%;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.name .form-name,
+form input {
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.form-name:first-child {
+  margin-right: 20px;
+  width: 150px;
+  border-radius: 5px;
+}
+
+.form-name:last-child {
+  width: 150px;
+  border-radius: 5px;
+}
+.register-form button {
+  margin-top: 20px;
+  width: 80%;
+  margin-left: 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.register-form button:hover {
+  background-color: lightblue;
+}
+
+/*responsive layout*/
+
+@media only screen and (max-width: 750px) {
+  .container {
+    height: auto;
+  }
+  .register-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .register-desc {
+    flex: 1;
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 50px;
+  }
+
+  .register-form {
+    flex: 1;
+    width: 59%;
+    margin: 0 auto;
+  }
+  .name {
+    width: auto;
+    flex-direction: row;
+  }
+  .name input {
+    width: auto;
+  }
+}
+
+@media screen and (width: 650px) {
+  .name {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .name input {
+    width: 100%;
+    flex: 1;
+  }
+}

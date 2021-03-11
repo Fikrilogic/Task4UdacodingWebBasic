@@ -174,15 +174,3 @@ form input {
     width: auto;
   }
 }
-
-@media screen and (width: 650px) {
-  .name {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .name input {
-    width: 100%;
-    flex: 1;
-  }
-}
